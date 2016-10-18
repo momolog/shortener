@@ -9,7 +9,7 @@ class CreateShortenedUrlsTable < ActiveRecord::Migration
       t.text :url, null: false
 
       # the unique key
-      t.string :unique_key, limit: 10, null: false
+      t.string :unique_key, null: false
 
       # how many times the link has been clicked
       t.integer :use_count, null: false, default: 0
